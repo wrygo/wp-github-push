@@ -16,6 +16,14 @@ include 'includes/settings.php';
 include 'includes/sync.php';
 include 'includes/logs.php';
 
+// Add settings link
+add_filter('plugin_action_links_' . plugin_basename(__FILE__), 'github_sync_settings_link');
+
+function github_sync_settings_link($links) {
+    $settings_link = '<a href="admin.php?page=github-sync">' . __('Settings') . '</a>';
+    array_unshift($links, $settings_link);
+    return $links;
+}
 // Register settings page
 add_action('admin_menu', 'github_sync_settings_page');
 
