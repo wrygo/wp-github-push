@@ -3,7 +3,7 @@
  * Plugin Name: WP Github Push
  * Plugin URI: https://wrygo.com/wp-github-push
  * Description: Automate syncing chosen file types from a WordPress directory with a GitHub repository or its subdirectory.
- * Version: 1.0
+ * Version: 1.1
  * Author: Abdur Rob Badhon
  * Author URI: https://wrygo.com/wp-github-push
  * Text Domain: wp-github-push
